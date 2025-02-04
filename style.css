@@ -1,0 +1,48 @@
+/* Animation for project cards */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.project-card {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Animation for skill percentages */
+@keyframes fillProgress {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: var(--progress);
+  }
+}
+
+.progress-bar {
+  animation: fillProgress 1.5s ease-out forwards;
+}
+
+/* Animation for project swipe */
+@keyframes swipeLeft {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.swipe-left {
+  animation: swipeLeft 0.5s ease-out;
+}
